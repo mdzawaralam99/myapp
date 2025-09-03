@@ -60,5 +60,7 @@ class AppServiceProvider extends ServiceProvider
     Gate::define('productCategories.view', fn($user) =>
         $user->hasRole(['SUPER_ADMIN', 'PROPERTY_MANAGER', 'OFFICE_MANAGER', 'SECURITY_PERSONNEL', 'MAINTENANCE_STAFF', 'CONSTRUCTION_SUPERVISOR'])
     );
+
+    
 }
 }
